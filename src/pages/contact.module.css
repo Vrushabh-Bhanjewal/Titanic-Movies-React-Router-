@@ -1,0 +1,58 @@
+.flex-two{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+    margin: 20px 0;
+    gap:30px;
+}
+.img{
+    width: 450px;
+    & img{
+        width: 100%;
+    }
+}
+.contact-container{
+    /* margin-top: 50px; */
+    padding-top: 20px;
+    background-color: rgb(239, 246, 251);
+    display: flex;
+    /* margin: 50px auto; */
+    width: fit-content;
+    padding: 20px;
+    justify-content: end;
+    align-items: center; 
+    flex-direction: column;
+    border: 1px solid rgb(181, 247, 181);
+    /* border-radius: 20px; */
+    box-shadow: #1b1bb689 0px 7px 29px 0px;
+}
+.form-layout{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px 10px;
+    gap:10px;
+}
+input,textarea{
+    padding: 5px;
+    font-size: 15px;
+    resize: none;
+}
+.cbtn{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(148, 249, 202);
+    font-size: 15px;
+    &:hover{
+        background-color: rgb(134, 201, 243);
+        box-shadow: #93dcf494 0px 7px 29px 0px;
+        transition: all 0.5s ease;
+    }
+}
+@media (width <780px){
+    .flex-two{
+        flex-direction: column;
+    }
+}
