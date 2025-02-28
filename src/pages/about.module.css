@@ -1,0 +1,20 @@
+.div1{
+    display:flex;
+    width:80%;
+    margin:60px auto;
+    background-color:rgba(0,0,0,0.1);
+    padding:30px;
+    gap:30px;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    & h1{
+        margin-bottom: 10px;
+    }
+    & p{
+        text-align: justify;
+    }
+  }
+  @media (width<780px){
+    .div1{
+        flex-direction: column;
+    }
+  }
